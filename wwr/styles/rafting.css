@@ -1,0 +1,95 @@
+:root {
+    --primary-color: #93b7be ;
+    --secondary-color: #fcff4b;
+    --accent1-color: #ffc4d1;
+    --accent2-color: #731dd8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+.flexbox-contener {
+    height: ;
+    display: flex;
+    flex-wrap: ;
+    justify-content: center;
+    align-items: ;
+    align-content: ;
+}
+
+.flexbox-item {
+    width: ;
+    margin: ;
+    border: ;
+    background-color: ;
+}
+
+.flexbox-item-1 {
+    min-height: ;
+}
+
+.flexbox-item-2 {
+    min-height: ;
+}
+
+.flexbox-item-3 {
+    min-height: ;
+}
+
+.flexbox-item-4 {
+    min-height: ;
+}
+
+.flexbox-item-5 {
+    min-height: ;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: ;
+}
+
+nav a{
+    text-decoration: none;
+}
+ 
+.hero{
+    position: relative;
+}
+ 
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+ 
+.hero h1{
+    text-align: center;
+    color: var(--primary-color);
+ 
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+ 
+    background-color: rgba(255, 255, 255, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+ 
+.hero article {
+    padding: 1rem;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    right: 10%;
+    background-color: rgba(222, 194, 160, 0.8);
+    
+}
+ 
+.hero article img{
+    float: right;
+    width: 250px;
+}
+ 
