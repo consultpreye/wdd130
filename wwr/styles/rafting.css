@@ -8,47 +8,39 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
  
-.flexbox-contener {
-    height: ;
+header {
+    padding: 20px;
+    margin: 1rem auto;
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	max-width: 1000px;
+}
+
+nav {
+    margin: 20px 0;
     display: flex;
-    flex-wrap: ;
-    justify-content: center;
-    align-items: ;
-    align-content: ;
+    justify-content: flex-end;
 }
 
-.flexbox-item {
-    width: ;
-    margin: ;
-    border: ;
-    background-color: ;
+.logo img {
+	margin: 0 0.25rem 0 1rem;
+	width: 64px;
+	height: auto;
 }
 
-.flexbox-item-1 {
-    min-height: ;
-}
-
-.flexbox-item-2 {
-    min-height: ;
-}
-
-.flexbox-item-3 {
-    min-height: ;
-}
-
-.flexbox-item-4 {
-    min-height: ;
-}
-
-.flexbox-item-5 {
-    min-height: ;
+.flex-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: ;
+    grid-template-columns: 100px 1fr 2fr;
 }
 
 nav a{
@@ -68,12 +60,10 @@ nav a{
 .hero h1{
     text-align: center;
     color: var(--primary-color);
- 
     position: absolute;
     top: 10%;
     left: 0;
     right: 0;
- 
     background-color: rgba(255, 255, 255, 0.5);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -85,11 +75,112 @@ nav a{
     left: 10%;
     right: 10%;
     background-color: rgba(222, 194, 160, 0.8);
-    
 }
  
 .hero article img{
     float: right;
     width: 250px;
 }
- 
+
+/* History Section Layout */
+.history {
+    position: relative;
+}
+
+.history h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    
+}
+
+.history article {
+    padding: 5rem;
+    position: relative;
+    top: 30%;
+    left: 0%;
+    right: 20%;
+    background-color: rgba(222, 194, 160, 0.8);
+}
+
+.history article img{
+    float: none;
+    width: 150px;
+}
+
+.history img {
+    display: flex;
+    width: 10%;
+    height: 300%;
+}
+
+/* Adventures Section Layout */
+.adventures {
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: #eee;
+    justify-content: space-between;
+}
+
+.adventures figure {
+    text-align: center;
+    flex: 1;
+}
+
+.adventures img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.adventures figcaption {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: #555;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: lightgrey;
+    color: white;
+}
+
+footer .social-media {
+    display: flex;
+    gap: 1rem;
+}
+
+footer .social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
