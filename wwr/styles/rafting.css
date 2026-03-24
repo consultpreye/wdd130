@@ -72,13 +72,13 @@ h2 {
     color: #fff;
 }
 
-article {
+.hero article {
     position: absolute;
     width: 100%;
     bottom: 30px;
     padding: 1px;
-    background-color: var(--accent2-color);
-    color: #fff;
+    background-color: var(--secondary-color);
+    color: #000;
 }
 
 .hero article img {
