@@ -72,6 +72,11 @@ nav a:hover {
     object-fit: cover;
 }
 
+iframe {
+    border: 2px solid #333;
+    border-radius: 8px;
+}
+
 main {
     width: 840px;
     margin: auto;
@@ -103,7 +108,6 @@ textarea {
 .radio-group {
     display: flex;
     flex-direction: column;
-    gap: 5px;
 }
 
 .checkbox-label {
