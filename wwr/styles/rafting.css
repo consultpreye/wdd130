@@ -48,7 +48,7 @@ body {
     padding: 10px;
     margin: 0 5px;
     font-size: 1.2rem;
-    background-color: 1px solid #ccc;
+    background-color: #ccc;
 }
 
 nav a:hover {
