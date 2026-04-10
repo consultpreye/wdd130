@@ -1,9 +1,10 @@
-:root {
+Rafting.css code:root {
     --primary-color: #055a05;
     --secondary-color: #f4a261;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
-    --heading-font: "Times New Roman", "Georgia", serif;
+    --heading-font: "Times New Roman", "Georgia",
+        serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
@@ -21,140 +22,129 @@ body {
 .header {
     width: 840px;
     margin: 1rem auto;
+    background-color: #f5f5f5;
+    padding: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
-    background-color: #f5f5f5;
 }
 
 .logo {
+    margin: 0 0.25rem 0 1rem;
     width: 120px;
     height: auto;
 }
 
-main {
-    width: 840px;
-    margin: 0 auto;
-}
-
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-nav {
-    margin: 16px;
-    padding: 8px;
+.nav {
     display: flex;
-    justify-content: flex-end;
     list-style: none;
-    gap: 25px;
 }
 
-nav a {
+.nav a {
+    display: block;
     text-decoration: none;
-    font-weight: bold;
-    color: #333;
+    color: black;
+    background: #ddd;
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 1.2rem;
+    background-color: 1px solid #264653;
 }
 
 nav a:hover {
     color: #0077b6;
 }
 
-.hero {
-    position: relative;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
+.company-info {
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
+    margin: 20px 0;
 }
 
-h2 {
-    text-align: center;
-    padding: 1px;
-    background-color: var(--accent1-color);
-    color: var(--accent2-color);
-}
-
-.hero article {
-    position: absolute;
-    width: 100%;
-    bottom: 30px;
-    padding: 1px;
-    background-color: var(--secondary-color);
-    color: #000;
-}
-
-.hero article img {
-    float: right;
-    width: 125px;
-    padding: 10px;
-    margin-top: 10px;
-}
-
-p,
-section {
-    margin: 10px;
-    padding: 8px;
-}
-
-.history {
+.contact-section {
+    display: flex;
+    gap: 20px;
     padding: 20px;
 }
 
-.history-grid {
-    display: grid;
-    grid-template-columns: 1fr 250px 1fr;
-    gap: 20px;
-    align-items: center;
+.map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.history-img {
-    width: 80%;
-    border-radius: 10px;
-    float: inline-end;
-    margin: 0 0 15px 20px;
+main {
+    width: 840px;
+    margin: auto;
 }
 
-.adventures {
-    padding: 1px;
-}
-
-.adventure-gallery {
+.contact-form {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 15px;
 }
 
-.adventure-gallery figure {
-    width: 100%;
+.form-row {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+}
+
+.form-row input,
+.form-row textarea,
+button {
+    padding: 8px;
+    width: 140%;
+}
+
+textarea {
+    height: 80px;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background: #ccc;
+    cursor: pointer;
+}
+
+.employee {
+    border: 1px solid #999;
+    margin: 20px;
+    padding: 20px;
     text-align: center;
 }
 
-.adventure-gallery img {
-    width: 100%;
-    border-radius: 8px;
+.employee-profile {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 10px;
 }
 
-figcaption {
-    margin-top: 8px;
-    font-size: 14px;
-    font-weight: bold;
+.employee-gallery {
+    text-align: center;
+}
+
+.employee-gallery img {
+    width: 80%;
+    height: 100px;
+    background: #ddd;
+}
+
+.employee-gallery p {
+    margin-top: 10px;
 }
 
 footer {
